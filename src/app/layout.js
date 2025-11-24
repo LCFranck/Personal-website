@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Header from "./components/header";
+import MainBox from "./components/mainBox";
+
 
 
 //font imports, change later
@@ -16,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Personal website",
+  title: "Cassandra Franck",
   description: "personal website for portfolio and blog",
 };
 
@@ -25,7 +27,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header/>
+        <MainBox> 
         {children}
+        </MainBox>
         <footer>
           <p>© 2025 Cassandra Franck made this :3 </p>
         </footer>
