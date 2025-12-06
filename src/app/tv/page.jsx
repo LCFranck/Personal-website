@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import Tv from '../components/Tv'
+import Tv from '../../components/Tv'
 
 
 const page = () =>{
