@@ -2,6 +2,9 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { buildTeletextUrl, imageExists } from '../services/txtTv'
+import tv_PNG39251 from '../assets/tv_PNG39251.png'
+
+import styles from "../styles/TV.module.css";
 
 //this TV contains txt TV fron the YLE API
 const Tv = () =>{
@@ -9,22 +12,6 @@ const Tv = () =>{
     const [page, setPage] = useState(100);
     const [subpage, setSubpage] = useState(1);
 
-/*     const buildTeletextUrl = (page, subpage) => {
-        const appId = process.env.NEXT_PUBLIC_TV_API; //API defined in the .env file 
-
-        return `https://external.api.yle.fi/v1/teletext/images/${page}/${subpage}.png?${appId}`;
-}
-
-   const imageExists = async (page, subpage) =>{
-        const url = buildTeletextUrl(page, subpage)
-        try {
-            const res = await fetch(url);
-            return res.ok;
-        } catch (err) {
-            console.log()
-            return false;
-        }
-} */
     const onChangePage = async (page, subpage) =>{
         const exists = await imageExists(page, subpage)
         console.log(exists)
@@ -38,12 +25,16 @@ const Tv = () =>{
     const src = buildTeletextUrl(page, subpage);
 
     return (//supage is only changable on the first page, which is why changing the page, resets the subpage to 1
-    <div>
-        <Image src={src} width={500} height={500} alt="text tv!" loading="eager" />
-        <button onClick={() => onChangePage(page + 1, 1)}>Next page</button>
-        <button onClick={() => onChangePage(page, subpage + 1)}>Next subpage</button>
-        <button onClick={() => onChangePage(page - 1, 1)}>Prev page</button>
-        <button onClick={() => onChangePage(page, subpage - 1)}>Prev subpage</button>
+    <div className={styles.tvWrapper}>
+        <Image className={styles.frame} src={tv_PNG39251} width={800} height={800} alt="tv boarder" loading="eager" />
+        <Image className={styles.screen} src={src} width={800} height={800} alt="text tv!" loading="eager" />
+        <div >
+            <button className={styles.button} onClick={() => onChangePage(page + 1, 1)}>Next page</button>
+            <button className={styles.button} onClick={() => onChangePage(page - 1, 1)}>Prev page</button>
+            <button className={styles.button} onClick={() => onChangePage(page, subpage + 1)}>Next subpage</button>   
+            <button className={styles.button} onClick={() => onChangePage(page, subpage - 1)}>Prev subpage</button>
+        </div>
+        
     </div>
     );
 

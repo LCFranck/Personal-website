@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FlipPhone from "../assets/FlipPhone.png";
 
+
 import styles from "../styles/MainBox.module.css";
 
 
