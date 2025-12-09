@@ -12,7 +12,10 @@ const page = () =>{
 
 return (
   <div>
+    <h1>Welcome to my exclusive YLE text TV page!</h1>
+    <p> (Not actually exclusive in any way) </p>
     <Tv></Tv>
+    <p> this was made usiing the yle API </p>
   </div>
 );
 

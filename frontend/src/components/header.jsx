@@ -10,6 +10,7 @@ const Header = () => {
         <Link href="/about">About me</Link> |{" "}
         <Link href="/gallery">Gallery</Link>|{" "}
         <Link href="/tv">TV</Link>
+        <Link href="/countdown">countdown</Link>
       </nav>
     </header>
   );
