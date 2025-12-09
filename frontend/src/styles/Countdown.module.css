@@ -1,0 +1,35 @@
+.box {
+  background-color: #ffc3c3;
+  border: 3px solid #d98687;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 12px 0;
+
+  width: 100%;
+  max-width: 60%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  font-family: "Georgia", serif;
+  color: #814a4a;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.event {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.time {
+  font-size: 18px;
+  
+}

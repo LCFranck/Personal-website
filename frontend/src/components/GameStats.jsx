@@ -5,7 +5,7 @@ import FlipPhone from "../assets/FlipPhone.png";
 import styles from "../styles/MainBox.module.css";
 
 
-const FlipPhoneImage = () =>{
+const GameStats = () =>{
   return (
     <Image
       className={styles.image}
@@ -14,4 +14,4 @@ const FlipPhoneImage = () =>{
     />
   );
 }
-export default FlipPhoneImage;
+export default GameStats;

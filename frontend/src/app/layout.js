@@ -1,21 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import Header from "../components/header";
-import MainBox from "../components/mainBox";
+import Header from "../components/Header";
+import MainBox from "../components/MainBox";
 
 
 
-//font imports, change later
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Cassandra Franck",
@@ -25,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <Header/>
         <MainBox> 
         {children}
