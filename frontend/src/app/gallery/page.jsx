@@ -1,13 +1,18 @@
-import PhoneImage from "../../components/FlipPhoneImage";
+// app/gallery/page.tsx
 
 
-const page = () =>{
+import Gallery from "@/components/Gallery";
+
+import MainBox from "@/components/MainBox";
+export default function GalleryPage() {
+
+
   return (
-    <div> 
-      <h1>Welcome to my gallery</h1>
-      <PhoneImage />
+    <div >
+      <MainBox>
+      <h1>Gallery!</h1>
+      <Gallery></Gallery>
+      </MainBox>
     </div>
-      
   );
 }
-export default  page

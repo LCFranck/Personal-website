@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header/>
-        <MainBox> 
-        {children}
-        </MainBox>
+        <div> 
+          {children}
+        </div>
         <footer>
           <p>© 2025 Cassandra Franck made this :3 </p>
         </footer>

@@ -3,6 +3,6 @@ Content-Type: application/json
 
 {
     "username": "caca",
-    "name": "caca",
+    "name": "cassandra",
     "password": "caca"
 }

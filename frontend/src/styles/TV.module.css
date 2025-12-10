@@ -25,24 +25,25 @@
 .screen {
     position: absolute;
     top: 9%;         
-    left: 3%;
+    left: 5%;
     height: 75%;
-    width: 69%;
+    width: 67%;
     z-index: 1;
 }
 .buttonContainer {
     display: flex;
-    flex-direction: row;   /* ensures they stay side-by-side */
+    flex-direction: row;   
     justify-content: center;
     align-items: center;
-    gap: 15px;             /* spacing between buttons */
+    gap: 15px;            
     margin-top: 20px;
-    flex-wrap: wrap;       /* optional: keeps row on small screens */
+    flex-wrap: wrap;      
 }
 
 
 .button {
     margin-top: 20px;
+    cursor: pointer;
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;

@@ -1,20 +1,24 @@
 .header {
+  position: fixed;
+  width: 100%;
   background-color: #f4e9d0; 
   padding: 20px;
   border: 3px solid #b29d7f;
   text-align: center;
-
-  margin: 15px;
-  border-radius: 14px;
-  box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 800;
+  
+ 
+  
 
 }
+/* box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1); */
 
 .links a {
   color: #8b4a62; 
   text-decoration: none;
   font-weight: bold;
   margin: 0 8px;
+  cursor: pointer;
 }
 
 .links a:hover {

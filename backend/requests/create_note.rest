@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhY2EiLCJpZCI6IjY5Mzk2ODUxMzZmMjI0YWFlMmY3MzljMCIsImlhdCI6MTc2NTM3MDQzMCwiZXhwIjoxNzY1Mzc0MDMwfQ.rBQQboyDv3_v2FmQBKcmtflpgQ_qY0QZHHhWE5jUaeM
+
+{
+  "title": "Första",
+  "author": "Cacce wa",
+  "content": "Hej alla detta är min första notis!",
+  "likes": 0  
+}
+
