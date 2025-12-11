@@ -1,6 +1,7 @@
 .tvWrapper {
     position: relative;
     width: 100%;
+    height: auto;
     max-width: 800px;
     margin: auto;
 

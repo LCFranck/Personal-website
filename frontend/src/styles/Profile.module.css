@@ -1,0 +1,32 @@
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;   /* ensures they stay side-by-side */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;             /* spacing between buttons */
+    margin-top: 20px;
+    flex-wrap: wrap;       /* optional: keeps row on small screens */
+}
+
+
+.button {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ffc3c3;
+    border: 3px solid #d98687;
+    border-radius: 8px;
+    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+    color: #703333;
+    display: flex;
+    font-size: 24px;
+    padding: 10px 20px;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    }
+
+.button:hover {
+    background-color: #8fb583;
+    border: 3px solid #3f4e3a;
+    color: #3f4e3a;;
+}

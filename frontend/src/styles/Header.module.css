@@ -12,6 +12,19 @@
   
 
 }
+
+.login {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+   z-index: 801;
+   border: #c2638b;
+   border-radius: 100%;
+}
+
+.links a:hover {
+  color: #c2638b;
+}
 /* box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1); 
 #f4e9d0
 #b29d7f;
