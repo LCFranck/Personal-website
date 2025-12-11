@@ -1,15 +1,15 @@
 import GameStats from "@/components/GameStats";
-import MainBox from '@/components/MainBox'
+import MainBox from "@/components/MainBox";
 
+import LogInform from "@/components/LogInForm";
 
 const page = () =>{
   return (
     <div> 
         <MainBox> 
-            
-            <h1>Welcome to my note section!</h1>
-            
-        </MainBox> 
+            <LogInform></LogInform>
+        </MainBox>
+      
     </div>
       
   );

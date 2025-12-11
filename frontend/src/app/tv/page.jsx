@@ -14,7 +14,7 @@ return (
   <div>
     <MainBox>
       <h1>Welcome to my exclusive YLE text TV page!</h1>
-      <p> (Not actually exclusive in any way) </p>
+      <p>  </p>
       <Tv></Tv>
  
     </MainBox>

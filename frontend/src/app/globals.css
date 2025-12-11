@@ -14,11 +14,16 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+ 
 }
 
 body {
+  background-image: url('../assets/7425076.jpg');  
+  background-size: cover;       
+  background-position: center; 
+
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
    font-family: "Georgia", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

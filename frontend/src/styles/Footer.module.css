@@ -1,0 +1,23 @@
+.footer {
+   /*  background-color: #f4e9d0; 
+    
+
+    border: 3px solid #b29d7f; */
+    display: flex;      
+    justify-content: flex-end; 
+    align-items: center;     
+
+    color:#ffffff;
+    font-size: 18px;
+    height: 20px;
+padding: 20px;
+
+}
+
+/* .box p {
+ 
+  color: #5a3e36;
+  line-height: 1.6;
+  margin: 20px;
+  
+} */

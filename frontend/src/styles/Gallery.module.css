@@ -37,7 +37,7 @@
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;
-    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     color: #703333;
     display: flex;
     font-size: 24px;
@@ -46,11 +46,13 @@
     }
 
 .image:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     background-color: #8fb583;
     border: 3px solid #3f4e3a;
     color: #3f4e3a;
 }
+
+
 
 /* .enhancedImage {
     position: absolute;

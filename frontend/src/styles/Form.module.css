@@ -1,49 +1,27 @@
-.tvWrapper {
-    position: relative;
+.input {
     width: 100%;
-    max-width: 800px;
-    margin: auto;
-
-      
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: row;
-
-    align-self: center;
+    padding: 12px 20px;
+    margin: 5px 0;
+    /* box-sizing: border-box; */
+    border: 2px solid #9a5e5e;
+    border-radius: 4px;
+    background-color: #f39898;
+    font-size: 16px;
 }
 
-.frame {
-    position: relative;
-    width: 100%;
-    height: auto; 
-    z-index: 2;
-    pointer-events: none; 
-}
-
-.screen {
-    position: absolute;
-    top: 9%;         
-    left: 5%;
-    height: 75%;
-    width: 67%;
-    z-index: 1;
-}
 .buttonContainer {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;   /* ensures they stay side-by-side */
     justify-content: center;
     align-items: center;
-    gap: 15px;            
+    gap: 15px;             /* spacing between buttons */
     margin-top: 20px;
-    flex-wrap: wrap;      
+    flex-wrap: wrap;       /* optional: keeps row on small screens */
 }
 
 
 .button {
     margin-top: 20px;
-    cursor: pointer;
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;
@@ -61,4 +39,3 @@
     border: 3px solid #3f4e3a;
     color: #3f4e3a;;
 }
-

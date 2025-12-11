@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import Header from "../components/Header";
 import MainBox from "../components/MainBox";
+import Footer from "../components/Footer";
 
 
 
@@ -20,9 +21,7 @@ export default function RootLayout({ children }) {
         <div> 
           {children}
         </div>
-        <footer>
-          <p>© 2025 Cassandra Franck made this :3 </p>
-        </footer>
+        <Footer/>
       </body>
     </html>
   );

@@ -5,14 +5,15 @@
   border-radius: 10px;
   margin: 12px 0;
 
-  width: 100%;
-  max-width: 60%;
+  width: 80%;
+  /* max-width: 60%; */
 
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+    justify-content: center;
   flex-direction: row;
-
+flex-wrap: wrap;
   font-family: "Georgia", serif;
   color: #814a4a;
 
@@ -30,6 +31,7 @@
 }
 
 .time {
-  font-size: 18px;
+  font-size: 20px;
+  margin: 0% 10px
   
 }
