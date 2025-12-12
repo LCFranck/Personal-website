@@ -4,7 +4,9 @@ import styles from "../styles/Profile.module.css";
 import { useState, useEffect } from "react";
 import noteService from '@/lib/noteService';
 const Profile = () => {
-     const [user, setUser] = useState(null)
+//TODO add usecontext!!!!!
+
+    /*  const [user, setUser] = useState(null)
     
         const KEY = 'loggedAppUser'
     
@@ -16,7 +18,7 @@ const Profile = () => {
             noteService.setToken(user.token)
             }
         }, [])
-    
+     */
       const handleLogout = async (event) => {
         event.preventDefault()
     
