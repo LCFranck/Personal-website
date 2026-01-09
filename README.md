@@ -73,9 +73,9 @@ npm install
 You must create your own .env files for:
 - MongoDB connection
 - YLE Teletext API
-These are required for the app to function correctly.
-the .env files should be in the root of both the backend and frontend directories
-the frontend should contain
+
+These are required for the app to function correctly. The .env files should be in the root of both the backend and frontend directories.
+The frontend should contain,
  ```ini
 NEXT_PUBLIC_TV_API=<API>
 ```
