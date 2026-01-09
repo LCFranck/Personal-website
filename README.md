@@ -44,9 +44,10 @@ It is **not meant to be a polished or professional website**. It is my creative 
 This project is **still a work in progress**.
 
 Planned improvements:
-- Finish login & registration functionality
-- Improve UX and UI details
-- Deploy the project once authentication is fully implemented
+- [ ] Finish login & registration functionality
+- [ ] Finish notes page
+- [ ] Improve UX and UI details
+- [ ] Deploy the project once authentication is fully implemented
 
 The site will be deployed on **Render** once the login system is complete.
 
