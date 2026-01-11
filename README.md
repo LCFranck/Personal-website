@@ -48,6 +48,7 @@ Planned improvements:
 - [ ] Finish notes page
 - [ ] Improve UX and UI details in login and profile
 - [ ] Deploy the project once authentication is fully implemented
+- [ ] make it mobile friendly
 
 The site will be deployed on **Render** once the login system is complete.
 
