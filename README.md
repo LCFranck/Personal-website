@@ -46,7 +46,7 @@ This project is **still a work in progress**.
 Planned improvements:
 - [ ] Finish login & registration functionality
 - [ ] Finish notes page
-- [ ] Improve UX and UI details
+- [ ] Improve UX and UI details in login and profile
 - [ ] Deploy the project once authentication is fully implemented
 
 The site will be deployed on **Render** once the login system is complete.
