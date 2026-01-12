@@ -1,0 +1,44 @@
+
+.notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  
+}
+
+.noteCard{
+    margin-top: 10px;
+   
+    height: auto px;      
+    width: auto;       
+    background-color: #ffc3c3;
+    border: 3px solid #d98687;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    color: #8b4a62;
+    padding: 10;
+  
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.contentBox{
+    margin-top: 10px;
+   
+    height: auto px;      
+    width: auto;       
+    background-color: #ffdfdf;
+    border: 3px solid #d98687;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    color: #8b4a62;
+    padding: 10;
+  
+    font-size: 24px;
+    font-weight: bold;
+
+}

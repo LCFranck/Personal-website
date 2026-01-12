@@ -1,5 +1,5 @@
 
-const baseUrl = "http://localhost:3001/api/notes";//ändra detta till korrekta URL:n för din backend
+const baseUrl = "http://localhost:3001/api/notes";
 
 
 let token = null;

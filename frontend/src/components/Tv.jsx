@@ -26,14 +26,7 @@ const Tv = () =>{
        
     }
 
-  /*   const handleInputKey = (e) => {
-    if (e.key === 'Enter') {
-      const pageNum = parseInt(inputPage, 10);
-      if (!isNaN(pageNum)) {
-        onChangePage(pageNum, 1);
-      }
-    }
-  } */
+
 
     const src = buildTeletextUrl(page, subpage);
 
@@ -51,6 +44,7 @@ const Tv = () =>{
         </div>
         
         <div className={styles.inputContainer}>
+        Page:
            <input
             className={styles.input}
             value={inputPage}
