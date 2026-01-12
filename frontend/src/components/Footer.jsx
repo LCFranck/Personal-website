@@ -5,7 +5,12 @@ import styles from "../styles/Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-        <p>© 2025 Cassandra Franck made this :3 </p>
+        <p className={styles.text}> © 2026 Cassandra Franck </p>
+        <br/>
+           <a href="mailto:cassandra.franck@gmail.com" >
+            Contact Me
+          </a> 
+           
     </footer>
   );
 };

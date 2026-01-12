@@ -1,20 +1,12 @@
 .galleryContainer {
-    display: flex;
-    flex-direction: row;  
-    justify-content: center;
-    align-items: center;
-    gap: 15px;            
-    margin-top: 20px;
-      
-    
-     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    flex-direction: row;
-    flex-wrap: wrap;  
-    align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
 }
+
 
 .imageButton {
     width: auto;
@@ -30,10 +22,13 @@
     
     }
 .image {
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
-    width: auto;
-    height: 220%px;
+    height: 170px;       /* all images have same height */
+    width: auto;         /* keeps aspect ratio */
+    object-fit: cover; 
+    
+    
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;
