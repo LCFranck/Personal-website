@@ -95,10 +95,12 @@ npm run dev
 now everything should be running
 
 ## Screenshots of current version
-<img width="2847" height="1507" alt="image-3" src="https://github.com/user-attachments/assets/3af328fb-45c5-4b8f-8cad-427fc668b910" />
-<img width="2815" height="1520" alt="image-1" src="https://github.com/user-attachments/assets/5f813693-f4d1-4c31-ae6f-e73876fa141f" />
-<img width="2876" height="1043" alt="image" src="https://github.com/user-attachments/assets/d7193df5-fa0e-4a46-bf0b-f2b24c5d5b4b" />
-<img width="2827" height="1508" alt="image" src="https://github.com/user-attachments/assets/946d3958-00ad-4007-a1a6-12b928f79f9a" />
+<img width="2847" height="1507" alt="countdown page" src="https://github.com/user-attachments/assets/3af328fb-45c5-4b8f-8cad-427fc668b910" />
+<img width="2815" height="1520" alt="gallery page1" src="https://github.com/user-attachments/assets/5f813693-f4d1-4c31-ae6f-e73876fa141f" />
+<img width="2876" height="1043" alt="homepage" src="https://github.com/user-attachments/assets/d7193df5-fa0e-4a46-bf0b-f2b24c5d5b4b" />
+<img width="2827" height="1508" alt="teletext page" src="https://github.com/user-attachments/assets/946d3958-00ad-4007-a1a6-12b928f79f9a" />
+<img width="1903" height="937" alt="note page" src="https://github.com/user-attachments/assets/641ad4fe-b1e4-4323-813b-d96a2b7b4223" />
+
 
 
 
