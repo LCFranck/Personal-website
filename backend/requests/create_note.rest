@@ -1,7 +1,6 @@
 POST http://localhost:3001/api/notes
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhY2EiLCJpZCI6IjY5Mzk2ODUxMzZmMjI0YWFlMmY3MzljMCIsImlhdCI6MTc2ODIyNDgyMCwiZXhwIjoxNzY4MjI4NDIwfQ.MyJt0GK0nWWzQTQxSd5so0P_e6AUfoFPqajPiC-28d4
-
+Authorization: Bearer 
 {
   "title": "Crow facts",
   "author": "Cassandra Franck",

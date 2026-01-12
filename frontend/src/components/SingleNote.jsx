@@ -13,7 +13,7 @@ const SingleNote = ({note}) => {
     <div className={styles.noteCard}> 
         <p>Title: {note.title} </p>
         <p> Author: {note.author}</p>
-        content:
+        Content:
         <p className={styles.contentBox}> {note.content} </p>
     </div>
     
