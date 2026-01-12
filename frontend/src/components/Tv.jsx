@@ -11,6 +11,9 @@ const Tv = () =>{
 
     const [page, setPage] = useState(100);
     const [subpage, setSubpage] = useState(1);
+    const [inputPage, setInputPage] = useState(100);
+
+
 
     const onChangePage = async (page, subpage) =>{
         const exists = await imageExists(page, subpage)
@@ -18,9 +21,19 @@ const Tv = () =>{
        if(exists){
             setPage(page)
             setSubpage(subpage)
+            setInputPage(page)
        }
        
     }
+
+  /*   const handleInputKey = (e) => {
+    if (e.key === 'Enter') {
+      const pageNum = parseInt(inputPage, 10);
+      if (!isNaN(pageNum)) {
+        onChangePage(pageNum, 1);
+      }
+    }
+  } */
 
     const src = buildTeletextUrl(page, subpage);
 
@@ -36,6 +49,23 @@ const Tv = () =>{
             <button className={styles.button} onClick={() => onChangePage(page, subpage + 1)}>Next subpage</button>   
             <button className={styles.button} onClick={() => onChangePage(page, subpage - 1)}>Prev subpage</button>
         </div>
+        
+        <div className={styles.inputContainer}>
+           <input
+            className={styles.input}
+            value={inputPage}
+            onChange={(e) => setInputPage(e.target.value)}
+            min={100}
+            max={899} 
+            />
+            <button onClick={() => onChangePage(parseInt(inputPage, 10) || page, 1)} className={styles.goButton}>
+            Go
+        </button>
+      </div>
+      <h3></h3>
+
+        
+        
     </div>
     );
 

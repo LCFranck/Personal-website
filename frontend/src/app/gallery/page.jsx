@@ -11,7 +11,7 @@ export default function GalleryPage() {
         <h1>Gallery!</h1>
         <h2>Press image to open in new tab!</h2>
       </div>
-      <Gallery></Gallery>
+      <Gallery/>
       </MainBox>
     </div>
   );

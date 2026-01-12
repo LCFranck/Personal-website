@@ -6,7 +6,6 @@
     display: flex;      
     justify-content: flex-end; 
     align-items: center;     
-
     color:#ffffff;
     font-size: 18px;
     height: 20px;
@@ -14,10 +13,9 @@ padding: 20px;
 
 }
 
-/* .box p {
+ .text {
  
-  color: #5a3e36;
-  line-height: 1.6;
-  margin: 20px;
+  padding: 13px;
+  margin: 13px;
   
-} */
+} 

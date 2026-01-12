@@ -1,9 +1,10 @@
 .tvWrapper {
+
     position: relative;
     width: 100%;
     height: auto;
     max-width: 800px;
-    margin: auto;
+    margin-top: 20px;
 
       
     display: flex;
@@ -23,6 +24,42 @@
     pointer-events: none; 
 }
 
+.inputContainer {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+
+    align-items: center;
+    gap: 15px;            
+    flex-wrap: wrap;     
+    font-size: 20; 
+    font-weight: bold;
+}
+/**/
+.input {
+
+    margin: 10px;
+    background-color: #ffc3c3;
+    border: 3px solid #d98687;
+    border-radius: 8px;
+    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+    color: #703333;
+    font-size: 24px;
+    padding: 10px 20px;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    align-self: center;
+    width: 150px;
+    }
+
+.input:focus {
+    background-color: #8fb583;
+    border: 3px solid #3f4e3a;
+    color: #3f4e3a;;
+}
+
+
 .screen {
     position: absolute;
     top: 9%;         
@@ -37,8 +74,26 @@
     justify-content: center;
     align-items: center;
     gap: 15px;            
-    margin-top: 20px;
     flex-wrap: wrap;      
+}
+
+.goButton {
+    cursor: pointer;
+    background-color: #ffc3c3;
+    border: 3px solid #d98687;
+    border-radius: 8px;
+    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+    color: #703333;
+    font-size: 24px;
+    padding: 10px 20px;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    }
+
+.goButton:hover {
+    background-color: #8fb583;
+    border: 3px solid #3f4e3a;
+    color: #3f4e3a;;
 }
 
 
