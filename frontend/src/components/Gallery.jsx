@@ -10,12 +10,12 @@ const Gallery = () => {
 
   return (
     <div className={styles.galleryContainer} >
-      {images.map((img) => (  
+      {images.map((img) => (
         <GalleryItem key={img} img={img} />
       ))}
     </div>
   );
-} 
-      
- 
+}
+
+
 export default Gallery;

@@ -8,18 +8,18 @@ import MainBox from '@/components/MainBox'
 
 const page = () =>{
 
-  
 
-return (
-  <div>
-    <MainBox>
-      <h1>Welcome to my exclusive YLE text TV page!</h1>
-      <p>  </p>
-      <Tv></Tv>
- 
-    </MainBox>
-  </div>
-);
+
+  return (
+    <div>
+      <MainBox>
+        <h1>Welcome to my exclusive YLE text TV page!</h1>
+        <p>  </p>
+        <Tv></Tv>
+
+      </MainBox>
+    </div>
+  );
 
 }
-export default  page
+export default page

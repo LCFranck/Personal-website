@@ -1,22 +1,20 @@
-  "use client";
+"use client";
 import React from "react";
- // import Image from "next/image";
-  
+// import Image from "next/image";
+
 import styles from "../styles/Notes.module.css";
 
 const SingleNote = ({note}) => {
-   
-
 
 
   return(
-    <div className={styles.noteCard}> 
-        <p>Title: {note.title} </p>
-        <p> Author: {note.author}</p>
+    <div className={styles.noteCard}>
+      <p>Title: {note.title} </p>
+      <p> Author: {note.author}</p>
         Content:
-        <p className={styles.contentBox}> {note.content} </p>
+      <p className={styles.contentBox}> {note.content} </p>
     </div>
-    
+
   )}
 
-export default  SingleNote;
+export default SingleNote;

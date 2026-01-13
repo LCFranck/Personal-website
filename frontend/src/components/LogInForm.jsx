@@ -6,30 +6,35 @@ import noteService from '../lib/noteService'
 import styles from "../styles/Form.module.css";
 
 const LogInForm = () => {
+  const KEY = 'loggedAppUser' //local storage key
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [user, setUser] = useState(() => { //sets initial state from local storage or null if no local storage
+    const loggedUserJSON = window.localStorage.getItem(KEY);
+    if (loggedUserJSON) {
+      const user = JSON.parse(loggedUserJSON);
+      return user;
+    }
+    return null;
+  });
 
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
-    const [user, setUser] = useState(null)
 
-    const KEY = 'loggedAppUser'
+// Updates noteService token when user state changes (e.g. on login/logout)
+  useEffect(() => {
+    if (user) {
+      noteService.setToken(user.token);
+    }
+  }, [user]);
 
-    useEffect(() => {
-        const loggedUserJSON = window.localStorage.getItem(KEY)
-        if (loggedUserJSON) {
-        const user = JSON.parse(loggedUserJSON)
-        setUser(user)
-        noteService.setToken(user.token)
-        }
-    }, [])
 
   const handleLogout = async (event) => {
     event.preventDefault()
 
     window.localStorage.removeItem(KEY)
     noteService.setToken(null)
-      setUser(null)
-      setUsername('')
-      setPassword('')
+    setUser(null)
+    setUsername('')
+    setPassword('')
 
   }
   const handleLogin = async (event) => {
@@ -48,51 +53,43 @@ const LogInForm = () => {
       setPassword('')
       console.log('successful login')
       console.log(user)
-     /*  setNotifType('success')
-      setNotification(` Welcome ${user.name}`)
-      setTimeout(() => {setNotification(null)}, 5000) */
     } catch (exception) {
-        console.log('wrong credentials')
-      //setErrorMessage('wrong credentials')
-     /*  setNotifType('error')
-      setNotification(` Wrong username or password!`)
-      setTimeout(() => {setNotification(null)}, 5000) */
-
+      console.log('wrong credentials')
     }
   }
 
 
   return (
     <div>
-        {!user && 
+      {!user &&
         <form onSubmit={handleLogin}>
-        <div>
+          <div>
             Username
             <input className={styles.input}
-            data-testid='username'
-            type="text"
-            value={username}
-            name="Username"
-            onChange={({ target }) => setUsername(target.value)}
+              data-testid='username'
+              type="text"
+              value={username}
+              name="Username"
+              onChange={({ target }) => setUsername(target.value)}
             />
-        </div>
-        <div>
+          </div>
+          <div>
             Password
             <input className={styles.input}
-            data-testid='password'
-            type="password"
-            value={password}
-            name="Password"
-            onChange={({ target }) => setPassword(target.value)}
+              data-testid='password'
+              type="password"
+              value={password}
+              name="Password"
+              onChange={({ target }) => setPassword(target.value)}
             />
-        </div>
-        <button type="submit" className={styles.button}>Login</button>
-        
+          </div>
+          <button type="submit" className={styles.button}>Login</button>
+
         </form>}
-        {user && <div>
+      {user && <div>
         <h1>{user.username} logged in  </h1>
-            <button onClick={handleLogout} className={styles.button}>Logout </button>
-           </div>}
+        <button onClick={handleLogout} className={styles.button}>Logout </button>
+      </div>}
     </div>
   )
 

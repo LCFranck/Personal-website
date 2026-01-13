@@ -73,4 +73,4 @@ export async function remove(id) {
   return res.json();
 }
 
-export default { getAll, setToken, create, update, remove };
+//export default { getAll, setToken, create, update, remove };

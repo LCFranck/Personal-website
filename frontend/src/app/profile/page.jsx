@@ -10,15 +10,15 @@ const page = () =>{
 
 
   return (
-    <div> 
-        <MainBox> 
-         <LogInform/>
-       
-        
-        </MainBox>
-      
+    <div>
+      <MainBox>
+        <LogInform/>
+
+
+      </MainBox>
+
     </div>
-      
+
   );
 }
-export default  page
+export default page

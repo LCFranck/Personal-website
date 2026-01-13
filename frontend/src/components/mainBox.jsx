@@ -3,10 +3,10 @@ import styles from "../styles/MainBox.module.css";
 
 const MainBox = ({ children }) => {
   return (
-<div>
+    <div>
 
-  <div className={styles.box}>{children}</div>
-</div>
+      <div className={styles.box}>{children}</div>
+    </div>
   );
 };
 

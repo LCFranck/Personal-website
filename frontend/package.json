@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+     "lint": "eslint . --ext js,jsx",
+    "lintfix": "eslint --fix --ext .js,.jsx ."
   },
   "dependencies": {
     "dotenv": "^17.2.3",

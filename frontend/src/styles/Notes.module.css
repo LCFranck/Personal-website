@@ -11,8 +11,8 @@
 
 .noteCard{
     margin-top: 10px;
-   
-    height: auto px;      
+    max-width: 45%;   
+    height: auto;      
     width: auto;       
     background-color: #ffc3c3;
     border: 3px solid #d98687;
@@ -29,8 +29,8 @@
 .contentBox{
     margin-top: 10px;
    
-    height: auto px;      
-    width: auto;       
+    height: auto;      
+    width: auto;    
     background-color: #ffdfdf;
     border: 3px solid #d98687;
     border-radius: 8px;
