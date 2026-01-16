@@ -1,5 +1,5 @@
-import GameStats from "@/components/GameStats";
-import MainBox from "@/components/MainBox";
+import GameStats from "../..//components/GameStats";
+import MainBox from "../../components/MainBox";
 const page = () =>{
   return (
     <div>

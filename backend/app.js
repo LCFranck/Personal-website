@@ -29,7 +29,7 @@ mongoose
   
 app.use(cors({
   origin: ['http://localhost:3000',
-    
+    'https://personal-website-frontend-n1lo.onrender.com'
   ],
   credentials: true
 }));
