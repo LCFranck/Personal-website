@@ -1,6 +1,5 @@
 
-const baseUrl = "http://localhost:3001/api/notes";
-
+const baseUrl = NEXT_PUBLIC_API_URL + "/api/notes";;
 
 let token = null;
 
