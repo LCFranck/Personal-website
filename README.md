@@ -16,7 +16,7 @@ It is **not meant to be a polished or professional website**. It is my creative 
 - Gallery with personal screenshots from my favourite video game
 - Teletext (TXT TV) viewer using the **YLE Teletext API**
 - Countdown page for events im waiting for
-- Login & register system (work in progress)
+- Login & register system (work in progress)(doesn't work yet)
 - Notes page (work in progress) where users can:
   - Add notes
   - View notes from other users
