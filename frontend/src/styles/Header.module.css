@@ -5,10 +5,16 @@
   /* height: 80px; */
   background-color: #ddeebf; 
   padding: 20px;
-  border: 3px solid #b3c393;
+  border: 5px solid #b3c393;
   text-align: center;
   z-index: 800;
-  
+ 
+ /*  border: 0.5rem outset pink;
+    border-radius: 12px; */
+/*   outline: 0.5rem solid rgb(240, 140, 222);
+
+
+   outline-offset: 2.5rem; */
  
   
 

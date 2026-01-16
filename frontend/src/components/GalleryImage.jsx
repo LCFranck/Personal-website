@@ -14,16 +14,16 @@ const GalleryItem = ({img}) => {
 
   return(
     <div>
-      <a onClick ={showImage}>
+      <button onClick ={showImage} className={styles.imageButton}>
 
         <Image className={styles.image}
           key={img}
           src={`/galleryImages/${img}`}
           alt=""
-          width={200}
-          height={200}
+          width={400}
+          height={400}
         />
-      </a>
+      </button>
     </div>
 
   )}

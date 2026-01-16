@@ -1,43 +1,43 @@
 .galleryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-  margin-top: 20px;
-}
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    
+} 
 
 
 .imageButton {
     width: auto;
-    height: auto;
+    height: 170px; 
     background-color: transparent;
     border: 3px solid transparent;
     border-radius: 8px;
   
-    color: #703333;
+   /*  color: #e8e8e8;
     display: flex;
-    font-size: 24px;
-   
+    font-size: 24px; */
     
     }
+    
 .image {
-    margin-top: 10px;
+   
+       
     cursor: pointer;
-    height: 170px;       /* all images have same height */
-    width: auto;         /* keeps aspect ratio */
+    height: 180px;       
+    width: auto;        
     object-fit: cover; 
-    
-    
+     
     background-color: #ffc3c3;
-    border: 3px solid #d98687;
+    border: 5px solid #d98687;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     color: #703333;
     display: flex;
     font-size: 24px;
-   
-    
+
     }
 
 .image:hover {
