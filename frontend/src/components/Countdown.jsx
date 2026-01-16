@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image";
-import FlipPhone from "@/assets/FlipPhone.png";
+import FlipPhone from "../assets/FlipPhone.png";
 import { useState, useEffect } from "react";
 
 
-import styles from "@/styles/Countdown.module.css";
+import styles from "../styles/Countdown.module.css";
 
 const Countdown = ({date, event}) =>{
   // console.log(date);
