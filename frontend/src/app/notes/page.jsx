@@ -1,8 +1,8 @@
-import GameStats from "@/components/GameStats";
-import MainBox from '@/components/MainBox'
-import styles from '@/styles/Profile.module.css'
+//import GameStats from "../../components/GameStats";
+import MainBox from '../../components/MainBox'
+import styles from '../../styles/Profile.module.css'
 import Link from "next/link";
-import NoteList from "@/components/NoteList";
+import NoteList from "../../components/NoteList";
 
 //TODO chnage the button to either be login or create new note
 const page = () =>{

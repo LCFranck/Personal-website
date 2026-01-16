@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from "../styles/Profile.module.css";
 import { useState, useEffect } from "react";
-import noteService from '@/lib/noteService';
+import noteService from '../lib/noteService';
 const Profile = () => {
 //TODO add usecontext!!!!! and also everythoing else
 

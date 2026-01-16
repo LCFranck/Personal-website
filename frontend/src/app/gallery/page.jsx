@@ -1,6 +1,6 @@
 
-import Gallery from "@/components/Gallery";
-import MainBox from "@/components/MainBox";
+import Gallery from "../../components/Gallery";
+import MainBox from "../../components/MainBox";
 export default function GalleryPage() {
 
   // text-align center style is added due to the mainbox css changing the alignment
