@@ -1,5 +1,5 @@
 
-const baseUrl = NEXT_PUBLIC_API_URL + "/api/notes";;
+const baseUrl = process.env.NEXT_PUBLIC_API_URL + "/api/notes";;
 
 let token = null;
 
@@ -72,4 +72,4 @@ export async function remove(id) {
   return res.json();
 }
 
-//export default { getAll, setToken, create, update, remove };
+export default { getAll, setToken, create, update, remove };

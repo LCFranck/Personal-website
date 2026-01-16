@@ -9,14 +9,16 @@ const LogInForm = () => {
   const KEY = 'loggedAppUser' //local storage key
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const [user, setUser] = useState(() => { //sets initial state from local storage or null if no local storage
+  const [user, setUser] = useState(null);
+
+    useEffect(() => {
     const loggedUserJSON = window.localStorage.getItem(KEY);
     if (loggedUserJSON) {
       const user = JSON.parse(loggedUserJSON);
-      return user;
+      setUser(user);
+      noteService.setToken(user.token);
     }
-    return null;
-  });
+  }, []);
 
 
 // Updates noteService token when user state changes (e.g. on login/logout)

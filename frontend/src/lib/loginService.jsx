@@ -9,4 +9,4 @@ export const login = async (credentials) =>{
 
   return res.json();
 }
-//export default { login };
+export default { login };
