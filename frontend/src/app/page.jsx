@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import FlipPhoneImage from "../components/FlipPhoneImage.jsx";
-import MainBox from "../components/MainBox";
+//import FlipPhoneImage from "../components/FlipPhoneImage.jsx";
+import MainBox from "@/components/MainBox";
 
-import styles from "../styles/MainBox.module.css";
+import styles from "@/styles/MainBox.module.css";
 
 
 export default function Home() {

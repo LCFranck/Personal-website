@@ -1,6 +1,6 @@
-import Countdown from "../../components/Countdown";
-import styles from "../../styles/MainBox.module.css";
-import MainBox from "../../components/MainBox";
+import Countdown from "@/components/Countdown";
+//import styles from "../../styles/MainBox.module.css";
+import MainBox from "@/components/MainBox";
 
 const page = () =>{
   return (

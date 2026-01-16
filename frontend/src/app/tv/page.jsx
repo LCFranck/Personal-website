@@ -1,10 +1,10 @@
 "use client"
 
-
+/* 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Tv from '../../components/Tv'
-import MainBox from '../../components/MainBox'
+import Image from 'next/image' */
+import Tv from '@/components/Tv'
+import MainBox from '@/components/MainBox'
 
 const page = () =>{
 

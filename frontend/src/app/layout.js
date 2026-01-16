@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 //import Link from "next/link";
-import Header from "../components/Header.jsx";
-import MainBox from "../components/MainBox";
-import Footer from "../components/Footer.jsx";
+import Header from "@/components/Header.jsx";
+import MainBox from "@/components/MainBox";
+import Footer from "@/components/Footer.jsx";
 
 
 export const metadata = {
