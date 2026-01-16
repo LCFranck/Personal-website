@@ -51,7 +51,8 @@ Planned improvements:
 - [ ] Finish notes page
 - [ ] Improve UX and UI details in login and profile
 - [x] Deploy the project
-- [ ] make it mobile friendly
+- [ ] Make it mobile friendly
+- [ ] Move gallery to backend (to improve efficiency and)
 
 
 
