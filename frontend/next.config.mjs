@@ -2,8 +2,7 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
-  output: 'export',      // Required for static serving
-  distDir: '../backend/dist', // Tells Next to build directly into the backend folder
+  
 
   images: {
     remotePatterns: [
