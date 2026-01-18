@@ -11,7 +11,7 @@
 
 .noteCard{
     margin-top: 10px;
-    max-width: 45%;   
+  /*   max-width: 30%;    */
     height: auto;      
     width: auto;       
     background-color: #ffc3c3;

@@ -19,15 +19,8 @@ const LogInForm = () => {
   }, [user]);
 
 
-  const handleLogout = async (event) => {
-    event.preventDefault()
-    logout()
-    console.log('logged out')
 
-    setUsername('')
-    setPassword('')
-  }
-  
+
   const handleLogin = async (event) => {
     event.preventDefault()
 
@@ -74,10 +67,7 @@ const LogInForm = () => {
           <button type="submit" className={styles.button}>Login</button>
 
         </form>}
-      {user && <div>
-        <h1>{user.username} logged in  </h1>
-        <button onClick={handleLogout} className={styles.button}>Logout </button>
-      </div>}
+    
     </div>
   )
 

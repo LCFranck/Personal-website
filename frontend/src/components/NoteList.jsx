@@ -6,7 +6,10 @@ import SingleNote from "./SingleNote";
 import styles from "../styles/Notes.module.css";
 import { getAll } from "../lib/noteService";
 
+import { useAuth } from "../context/AuthContext";
+
 const NoteList = () => {
+  const { user } = useAuth();
 
   const [notes, setNotes] = useState([]);
 
@@ -20,11 +23,14 @@ const NoteList = () => {
 
 
   return (
-    <div className={styles.notesContainer} >
+    <div>
+    {user && <div className={styles.notesContainer} >
       {notes.map((note) => (
         <SingleNote key={note.id} note={note} />
       ))}
+    </div>}
     </div>
+    
   );
 }
 
