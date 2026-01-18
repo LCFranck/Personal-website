@@ -22,6 +22,7 @@ const GalleryItem = ({img}) => {
           alt=""
           width={300}
           height={300}
+          loading="eager"
         />
       </button>
     </div>
