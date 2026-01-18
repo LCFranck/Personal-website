@@ -36,6 +36,8 @@ app.use(cors({
   credentials: true
 }));
 
+app.options('*', cors());
+
 
 app.use(express.static("dist"));
 app.use(express.json());
