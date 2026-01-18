@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/Header.jsx";
 import MainBox from "../components/MainBox";
 import Footer from "../components/Footer.jsx";
+import { AuthProvider } from "../context/AuthContext.jsx";
 
 
 export const metadata = {
@@ -15,11 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header/>
-        <div>
-          {children}
-        </div>
-        <Footer/>
+         <AuthProvider>
+          <Header/>
+            <div>
+              {children}
+            </div>
+          <Footer/>
+        </AuthProvider>
       </body>
     </html>
   );

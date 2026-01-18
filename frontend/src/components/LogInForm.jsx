@@ -1,27 +1,17 @@
 "use client"
 
 import { useState, useEffect } from 'react'
+import { useAuth } from "../context/AuthContext"
 import loginService from '../lib/loginService'
 import noteService from '../lib/noteService'
 import styles from "../styles/Form.module.css";
 
 const LogInForm = () => {
-  const KEY = 'loggedAppUser' //local storage key
+
+  const { user, login, logout } = useAuth()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-  const [user, setUser] = useState(null);
 
-    useEffect(() => {
-    const loggedUserJSON = window.localStorage.getItem(KEY);
-    if (loggedUserJSON) {
-      const user = JSON.parse(loggedUserJSON);
-      setUser(user);
-      noteService.setToken(user.token);
-    }
-  }, []);
-
-
-// Updates noteService token when user state changes (e.g. on login/logout)
   useEffect(() => {
     if (user) {
       noteService.setToken(user.token);
@@ -31,32 +21,28 @@ const LogInForm = () => {
 
   const handleLogout = async (event) => {
     event.preventDefault()
+    logout()
+    console.log('logged out')
 
-    window.localStorage.removeItem(KEY)
-    noteService.setToken(null)
-    setUser(null)
     setUsername('')
     setPassword('')
-
   }
+  
   const handleLogin = async (event) => {
     event.preventDefault()
 
     try {
-      const user = await loginService.login({
+      const userData = await loginService.login({
         username, password,
       })
-      window.localStorage.setItem(
-        KEY, JSON.stringify(user)
-      )
-      noteService.setToken(user.token)
-      setUser(user)
+
+      login(userData)
       setUsername('')
       setPassword('')
       console.log('successful login')
-      console.log(user)
-    } catch (exception) {
-      console.log('wrong credentials')
+    } catch (error) {
+      //todoo add error notification
+      console.log('wrong credentials', error)
     }
   }
 

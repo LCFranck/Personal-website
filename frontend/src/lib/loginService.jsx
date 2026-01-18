@@ -1,12 +1,20 @@
-const baseUrl = "/api/login";
+const baseUrl = "http://localhost:3001/api/login";
 
-export const login = async (credentials) =>{
+
+const login = async (credentials) => {
   const res = await fetch(baseUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(credentials)
+    body: JSON.stringify(credentials),
   });
 
-  return res.json();
-}
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data.error || "Invalid credentials");
+  }
+
+  return data;
+};
+
 export default { login };
