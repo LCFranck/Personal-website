@@ -10,10 +10,24 @@ const NoteForm = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState(''); 
 
-    const handleCreateNote = async (event) => {
-        event.preventDefault();
-
-    }
+      const handleCreateNote = async (event) => {
+        event.preventDefault()
+        const author = user.username;
+    
+        try {
+          const userData = await noteService.create({
+            title, content, author
+          })
+          console.log('Note created successfully:', userData);
+         
+          setTitle('')
+          setContent('')
+        
+        } catch (error) {
+          //todoo add error notification
+          console.log('something went wrong when creating note', error)
+        }
+      }
 
     return (
     <div>
