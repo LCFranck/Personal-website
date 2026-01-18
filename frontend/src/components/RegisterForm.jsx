@@ -44,7 +44,7 @@ const RegisterForm = () => {
     }
 
  return (
-    <div>
+    <div className={styles.inputContainer}>
       {!user &&
         <form onSubmit={handleRegister}>
           <div>

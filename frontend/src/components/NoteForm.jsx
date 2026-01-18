@@ -44,13 +44,12 @@ const NoteForm = ({setNotes }) => {
           </div>
           <div>
             Content
-            <input className={styles.input}
-              data-testid='content'
-              type="text"
-              value={content}
-              name="Content"
-              onChange={({ target }) => setContent(target.value)}
-            />
+           <textarea className={styles.resizeInput}
+          data-testid='content'
+          value={content}
+          name="Content"
+          onChange={({ target }) => setContent(target.value)}
+/>
           </div>
           <button type="submit" className={styles.button}>Create Note</button>
 

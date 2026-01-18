@@ -41,7 +41,7 @@ const LogInForm = () => {
 
 
   return (
-    <div>
+    <div className={styles.inputContainer}>
       {!user &&
         <form onSubmit={handleLogin}>
           <div>

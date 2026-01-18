@@ -9,6 +9,17 @@
     font-size: 16px;
 }
 
+.inputContainer {
+    background-color: #ddeebf;
+    border: 5px solid #b3c393;
+    border-radius: 8px;
+    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+     margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%; 
+}
+
 .buttonContainer {
     display: flex;
     flex-direction: row;   /* ensures they stay side-by-side */
@@ -38,4 +49,16 @@
     background-color: #8fb583;
     border: 3px solid #3f4e3a;
     color: #3f4e3a;;
+}
+
+.resizeInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    /* box-sizing: border-box; */
+    border: 2px solid #9a5e5e;
+    border-radius: 4px;
+    background-color: #f39898;
+    font-size: 16px;
+    resize: both;
 }
