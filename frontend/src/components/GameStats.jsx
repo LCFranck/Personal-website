@@ -1,17 +1,12 @@
 import Image from "next/image";
-import FlipPhone from "../assets/FlipPhone.png";
-
+import FlipPhoneImage from "./FlipPhoneImage";
 
 import styles from "../styles/MainBox.module.css";
 
 
 const GameStats = () =>{
   return (
-    <Image
-      className={styles.image}
-      src={FlipPhone}
-      alt="Flip Phone"
-    />
+    <FlipPhoneImage></FlipPhoneImage>
   );
 }
 export default GameStats;

@@ -15,16 +15,10 @@
     background-color: transparent;
     border: 3px solid transparent;
     border-radius: 8px;
-  
-   /*  color: #e8e8e8;
-    display: flex;
-    font-size: 24px; */
     
     }
     
-.image {
-   
-       
+.image { 
     cursor: pointer;
     height: 180px;       
     width: auto;        
@@ -40,11 +34,9 @@
 
     }
 
-.image:hover {
+.imageButton:hover {
     transform: scale(1.2);
-    background-color: #8fb583;
-    border: 3px solid #3f4e3a;
-    color: #3f4e3a;
+
 }
 
 

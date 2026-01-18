@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { buildTeletextUrl, imageExists } from '../lib/txtTv'
-import tv_PNG39251 from '../assets/tv_PNG39251.png'
+import tv_PNG39251 from '../../public/assets/tv_PNG39251.png'
 
 import styles from "../styles/TV.module.css";
 

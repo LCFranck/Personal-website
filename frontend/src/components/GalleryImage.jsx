@@ -20,8 +20,8 @@ const GalleryItem = ({img}) => {
           key={img}
           src={`/galleryImages/${img}`}
           alt=""
-          width={400}
-          height={400}
+          width={300}
+          height={300}
         />
       </button>
     </div>

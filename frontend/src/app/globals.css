@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  background-image: url('../assets/7425076.jpg');  
+  background-image: url('../../public/assets/7425076.jpg');  
   background-size: cover;       
   background-position: center; 
 
