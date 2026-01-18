@@ -5,7 +5,7 @@ import styles from '../styles/Form.module.css'
 import noteService from '../lib/noteService.jsx'
 import { useState } from 'react';
 
-const NoteForm = () => {
+const NoteForm = ({setNotes }) => {
     const {user} = useAuth();
     const [title, setTitle] = useState('');
     const [content, setContent] = useState(''); 
@@ -15,11 +15,11 @@ const NoteForm = () => {
         const author = user.username;
     
         try {
-          const userData = await noteService.create({
+          const newNote = await noteService.create({
             title, content, author
           })
-          console.log('Note created successfully:', userData);
-         
+          console.log('Note created successfully:', newNote);
+          setNotes(prev => prev.concat(newNote))
           setTitle('')
           setContent('')
         
