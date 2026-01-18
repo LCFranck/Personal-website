@@ -53,6 +53,7 @@ Planned improvements:
 - [x] Deploy the project
 - [ ] Make it mobile friendly
 - [ ] Move gallery to backend (to improve efficiency and)
+- [ ] make "About me" page actually say something about me
 
 
 
