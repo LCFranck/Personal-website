@@ -1,6 +1,8 @@
 
 #  Personal Website🍓
 
+URL: https://personal-website-frontend-n1lo.onrender.com 
+
 This is an personal website made for fun and learning.  
 The project focuses on custom UI design, fun UI interactions, and experimenting with both frontend and backend technologies.
 
@@ -9,15 +11,16 @@ It is **not meant to be a polished or professional website**. It is my creative 
 ---
 
 ##  Features
-
+- Now deployed on render!
 - Custom-designed UI (designed from scratch)
 - Gallery with personal screenshots from my favourite video game
 - Teletext (TXT TV) viewer using the **YLE Teletext API**
 - Countdown page for events im waiting for
-- Login & register system (work in progress)
+- Login & register system (work in progress)(doesn't work yet)
 - Notes page (work in progress) where users can:
   - Add notes
   - View notes from other users
+
 
 ---
 
@@ -47,10 +50,12 @@ Planned improvements:
 - [ ] Finish login & registration functionality
 - [ ] Finish notes page
 - [ ] Improve UX and UI details in login and profile
-- [ ] Deploy the project once authentication is fully implemented
-- [ ] make it mobile friendly
+- [x] Deploy the project
+- [ ] Make it mobile friendly
+- [ ] Move gallery to backend (to improve efficiency and)
+- [ ] make "About me" page actually say something about me
 
-The site will be deployed on **Render** once the login system is complete.
+
 
 ---
 
