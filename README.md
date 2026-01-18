@@ -47,7 +47,9 @@ It is **not meant to be a polished or professional website**. It is my creative 
 This project is **still a work in progress**.
 
 Planned improvements:
-- [ ] Finish login & registration functionality
+- [x] Finish login & registration functionality
+- [ ] make notifications
+- [ ] add functionality to delete notes
 - [ ] Finish notes page
 - [ ] Improve UX and UI details in login and profile
 - [x] Deploy the project
