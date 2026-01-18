@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:3001/api/login";
+const baseUrl = process.env.NEXT_PUBLIC_API_URL + "/api/login";
+
 
 
 const login = async (credentials) => {

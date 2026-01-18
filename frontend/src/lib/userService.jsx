@@ -1,5 +1,5 @@
 
-const baseUrl = "http://localhost:3001/api/users";
+const baseUrl = process.env.NEXT_PUBLIC_API_URL + "/api/users";
 
 
 const register = async (newUser) => {
