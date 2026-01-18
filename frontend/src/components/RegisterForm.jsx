@@ -27,12 +27,17 @@ const RegisterForm = () => {
             const userData = await userService.register({
                 username, name, password
             });
-          //  login(userData);
+            
+            const loginData = await loginService.login({username, password});
+            login(loginData)
+            console.log('successful login')
+                
             setUsername('');
             setPassword('');
             setPasswordRepeat('');
             setName('');
             console.log('successful registration and login');
+          
         } catch (error) {
             console.log('registration failed', error);
         }   
