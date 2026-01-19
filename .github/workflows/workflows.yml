@@ -24,4 +24,4 @@ jobs:
       - name: Lint
         run: npm run lint
       - name: Build & Deploy
-        run: curl ${{ secrets.FRONTEND_DEPLOY_HOOK }}
+        run: curl ${{ secrets.FRONTEND_HOOK }}
