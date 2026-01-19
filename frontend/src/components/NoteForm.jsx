@@ -1,35 +1,36 @@
 "use client";
-import React from 'react';  
+import React from 'react';
 import {useAuth} from '../context/AuthContext';
 import styles from '../styles/Form.module.css'
-import noteService from '../lib/noteService.jsx'
+import { create } from "@/lib/noteService";
+
 import { useState } from 'react';
 
 const NoteForm = ({setNotes }) => {
-    const {user} = useAuth();
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState(''); 
+  const {user} = useAuth();
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
 
-      const handleCreateNote = async (event) => {
-        event.preventDefault()
-        const author = user.username;
-    
-        try {
-          const newNote = await noteService.create({
-            title, content, author
-          })
-          console.log('Note created successfully:', newNote);
-          setNotes(prev => prev.concat(newNote))
-          setTitle('')
-          setContent('')
-        
-        } catch (error) {
-          //todoo add error notification
-          console.log('something went wrong when creating note', error)
-        }
-      }
+  const handleCreateNote = async (event) => {
+    event.preventDefault()
+    const author = user.username;
 
-    return (
+    try {
+      const newNote = await create({
+        title, content, author
+      })
+      console.log('Note created successfully:', newNote);
+      setNotes(prev => prev.concat(newNote))
+      setTitle('')
+      setContent('')
+
+    } catch (error) {
+      //todoo add error notification
+      console.log('something went wrong when creating note', error)
+    }
+  }
+
+  return (
     <div>
       {user &&
         <form onSubmit={handleCreateNote}>
@@ -44,17 +45,17 @@ const NoteForm = ({setNotes }) => {
           </div>
           <div>
             Content
-           <textarea className={styles.resizeInput}
-          data-testid='content'
-          value={content}
-          name="Content"
-          onChange={({ target }) => setContent(target.value)}
-/>
+            <textarea className={styles.resizeInput}
+              data-testid='content'
+              value={content}
+              name="Content"
+              onChange={({ target }) => setContent(target.value)}
+            />
           </div>
           <button type="submit" className={styles.button}>Create Note</button>
 
         </form>}
-    
+
     </div>
   )
 

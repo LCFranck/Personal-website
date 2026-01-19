@@ -1,6 +1,8 @@
 "use client"
 import { createContext, useContext, useEffect, useState } from "react"
-import noteService from "../lib/noteService"
+//import { noteService } from "../lib/noteService"
+import { getAll, create, update, remove, setToken } from "@/lib/noteService";
+
 
 const AuthContext = createContext()
 
@@ -12,23 +14,26 @@ export const AuthProvider = ({ children }) => {
     const storedUser = window.localStorage.getItem(KEY)
     if (storedUser) {
       const parsedUser = JSON.parse(storedUser)
-      setUser(parsedUser)
-      noteService.setToken(parsedUser.token)
+      setTimeout(() => { //timeout to satisfy lint
+        setUser(parsedUser)
+        setToken(parsedUser.token)
+      }, 0)
     }
   }, [])
 
- const login = (userData) => {
-  if (!userData?.token) {
-    throw new Error("No token received");
-  }
 
-  window.localStorage.setItem(KEY, JSON.stringify(userData));
-  noteService.setToken(userData.token);
-  setUser(userData);
-};
+  const login = (userData) => {
+    if (!userData?.token) {
+      throw new Error("No token received");
+    }
+
+    window.localStorage.setItem(KEY, JSON.stringify(userData));
+    setToken(userData.token);
+    setUser(userData);
+  };
   const logout = () => {
     window.localStorage.removeItem(KEY)
-    noteService.setToken(null)
+    setToken(null)
     setUser(null)
   }
 

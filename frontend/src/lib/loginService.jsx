@@ -2,7 +2,7 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL + "/api/login";
 
 
 
-const login = async (credentials) => {
+export const loginService = async (credentials) => {
   const res = await fetch(baseUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -18,4 +18,4 @@ const login = async (credentials) => {
   return data;
 };
 
-export default { login };
+//export default { login };

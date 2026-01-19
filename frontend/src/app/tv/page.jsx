@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Tv from '../../components/Tv'
 import MainBox from '../../components/MainBox'
 
-const page = () =>{
+const TvPage = () =>{
 
 
 
@@ -22,4 +22,4 @@ const page = () =>{
   );
 
 }
-export default page
+export default TvPage

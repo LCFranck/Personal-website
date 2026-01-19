@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { useAuth } from "../context/AuthContext"
-import loginService from '../lib/loginService'
-import noteService from '../lib/noteService'
+import { loginService } from '../lib/loginService'
+import { setToken } from "@/lib/noteService";
+
 import styles from "../styles/Form.module.css";
 
 const LogInForm = () => {
@@ -14,7 +15,7 @@ const LogInForm = () => {
 
   useEffect(() => {
     if (user) {
-      noteService.setToken(user.token);
+      setToken(user.token);
     }
   }, [user]);
 
@@ -25,7 +26,7 @@ const LogInForm = () => {
     event.preventDefault()
 
     try {
-      const userData = await loginService.login({
+      const userData = await loginService({
         username, password,
       })
 
@@ -67,7 +68,7 @@ const LogInForm = () => {
           <button type="submit" className={styles.button}>Login</button>
 
         </form>}
-    
+
     </div>
   )
 

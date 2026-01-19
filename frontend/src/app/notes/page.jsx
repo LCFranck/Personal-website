@@ -7,17 +7,19 @@ import Link from "next/link"
 
 import NoteList from "../../components/NoteList"
 import NoteForm from "../../components/NoteForm"
-import noteService from "@/lib/noteService"
+//import noteService from "@/lib/noteService"
+import { getAll } from "@/lib/noteService";
+
 import { useAuth } from "@/context/AuthContext"
 
-const Page = () => {
+const NotesPage = () => {
   const { user } = useAuth()
   const [notes, setNotes] = useState([])
 
- useEffect(() => {
+  useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const data = await noteService.getAll()
+        const data = await getAll()
         setNotes(data)
       } catch (err) {
         console.error("failed to fetch notes", err)
@@ -25,7 +27,7 @@ const Page = () => {
     }
 
     fetchNotes()
-  }, []) 
+  }, [])
 
 
   return (
@@ -46,4 +48,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default NotesPage

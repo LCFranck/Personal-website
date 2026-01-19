@@ -11,12 +11,12 @@ import { useAuth } from "@/context/AuthContext";
 import styles from '../../styles/Profile.module.css';
 
 
-const page = () =>{
+const ProfilePage = () =>{
 
-const { user } = useAuth();
+  const { user } = useAuth();
 
-const [registervisible, setRegistervisible] = useState(false);
-//const [loginvisible, setLoginvisible] = useState(false);
+  const [registervisible, setRegistervisible] = useState(false);
+  //const [loginvisible, setLoginvisible] = useState(false);
 
   return (
     <div>
@@ -28,7 +28,7 @@ const [registervisible, setRegistervisible] = useState(false);
             <button onClick={() => setRegistervisible(true)} className={styles.button}>Go to Register</button>
           </div>
         }
-         {!user && registervisible &&
+        {!user && registervisible &&
           <div style={{ marginTop: '10px' }}>
             <RegisterForm />
             <button onClick={() => setRegistervisible(false)} className={styles.button}>Go to Login</button>
@@ -40,4 +40,5 @@ const [registervisible, setRegistervisible] = useState(false);
 
   );
 }
-export default page
+export default ProfilePage
+

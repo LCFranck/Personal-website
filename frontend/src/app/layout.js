@@ -16,11 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-         <AuthProvider>
+        <AuthProvider>
           <Header/>
-            <div>
-              {children}
-            </div>
+          <div>
+            {children}
+          </div>
           <Footer/>
         </AuthProvider>
       </body>

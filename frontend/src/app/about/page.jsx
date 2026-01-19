@@ -1,6 +1,6 @@
 import GameStats from "../../components/GameStats";
 import MainBox from "../../components/MainBox";
-const page = () =>{
+const AboutPage = () =>{
   return (
     <div>
       <MainBox>
@@ -11,4 +11,4 @@ const page = () =>{
 
   );
 }
-export default page
+export default AboutPage

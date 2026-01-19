@@ -11,7 +11,7 @@ const Countdown = ({date, event}) =>{
   const [timeLeft, setTimeLeft] = useState(0);
 
 
-  useEffect(() => { //updates every minute to get the current time left  
+  useEffect(() => { //updates every minute to get the current time left
     const calculateTime = () => setTimeLeft(countDownDate - Date.now());
     calculateTime();
 

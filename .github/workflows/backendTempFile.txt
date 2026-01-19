@@ -1,0 +1,22 @@
+jobs:
+  backend_pipeline:
+    name: Backend Pipeline
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint
+     # - name: Test
+     #   run: npm test
+     # removed test because sadly i do not have any tests. This i will have to fix.
+    #  - name: Deploy
+     #   run: curl ${{ secrets.BACKEND_DEPLOY_HOOK }}
+     #  I currently dont want the backend to automatically be redeployed, since i dont need the backend to restart everytime i update the frontend

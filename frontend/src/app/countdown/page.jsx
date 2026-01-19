@@ -2,7 +2,7 @@ import Countdown from "../../components/Countdown";
 import styles from "../../styles/MainBox.module.css";
 import MainBox from "../../components/MainBox";
 
-const page = () =>{
+const CountdownPage = () =>{
   return (
     <div>
       <MainBox>
@@ -19,4 +19,4 @@ const page = () =>{
 
   );
 }
-export default page
+export default CountdownPage
