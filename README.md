@@ -21,6 +21,11 @@ It is **not meant to be a polished or professional website**. It is my creative 
   - Add notes
   - View notes from other users
 
+##  Notes
+- Render is very slow
+- be patient when regitering the first time, might take a while. but you will be logged in after pressing register
+- password needs to be 3 character long
+- I do not have error notifications yet so if something is not working you can always check the console
 
 ---
 
