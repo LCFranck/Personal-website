@@ -1,14 +1,27 @@
-name: Hello World!
+name: Deployment pipeline
 
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
-  hello_world_job:
+  frontend_pipeline:
+    name: Frontend Pipeline
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
     steps:
-      - name: Say hello
-        run: |
-          echo "Hello World!"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Debug branch
+        run: echo "HELLOOOOOO"
+      - name: Install dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint
+      - name: Build & Deploy
+        run: curl ${{ secrets.FRONTEND_DEPLOY_HOOK }}
