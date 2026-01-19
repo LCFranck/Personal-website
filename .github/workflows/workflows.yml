@@ -1,6 +1,12 @@
 name: Deployment pipeline
 
-
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
 
 
 jobs:
@@ -19,7 +25,5 @@ jobs:
         run: npm install
       - name: Lint
         run: npm run lint
-   #   - name: Test
-   #     run: npm test
       - name: Build & Deploy
         run: curl ${{ secrets.FRONTEND_DEPLOY_HOOK }}
