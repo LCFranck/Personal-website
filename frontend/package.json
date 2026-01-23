@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-      "start": "next start",
-     "lint": "eslint . --ext js,jsx",
+    "start": "next start",
+    "lint": "eslint . --ext js,jsx",
     "lintfix": "eslint --fix --ext .js,.jsx ."
   },
   "dependencies": {
+    "baseline-browser-mapping": "^2.9.17",
     "dotenv": "^17.2.3",
     "next": "^16.0.7",
     "react": "19.2.0",
