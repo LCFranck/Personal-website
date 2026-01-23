@@ -19,7 +19,7 @@ const NoteForm = ({setNotes }) => {
       const newNote = await create({
         title, content, author
       })
-      
+
       console.log('Note created successfully:', newNote);
       setNotes(prev => prev.concat(newNote))
       setTitle('')
