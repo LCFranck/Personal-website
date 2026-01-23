@@ -7,7 +7,6 @@ on:
 
 jobs:
   frontend_pipeline:
-    name: Frontend Pipeline
     runs-on: ubuntu-latest
     defaults:
       run:
