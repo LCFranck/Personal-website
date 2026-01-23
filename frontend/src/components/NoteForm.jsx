@@ -19,6 +19,7 @@ const NoteForm = ({setNotes }) => {
       const newNote = await create({
         title, content, author
       })
+      
       console.log('Note created successfully:', newNote);
       setNotes(prev => prev.concat(newNote))
       setTitle('')
@@ -31,7 +32,7 @@ const NoteForm = ({setNotes }) => {
   }
 
   return (
-    <div>
+    <div className={styles.inputContainer}>
       {user &&
         <form onSubmit={handleCreateNote}>
           <div>
@@ -43,8 +44,8 @@ const NoteForm = ({setNotes }) => {
               onChange={({ target }) => setTitle(target.value)}
             />
           </div>
+          Content
           <div>
-            Content
             <textarea className={styles.resizeInput}
               data-testid='content'
               value={content}
@@ -53,9 +54,7 @@ const NoteForm = ({setNotes }) => {
             />
           </div>
           <button type="submit" className={styles.button}>Create Note</button>
-
         </form>}
-
     </div>
   )
 

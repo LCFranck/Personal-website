@@ -14,20 +14,24 @@
     border: 5px solid #b3c393;
     border-radius: 8px;
     box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
-     margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
     width: 100%; 
+
+    display: flex;
+    flex-direction: Column;
+    align-items: top;
 }
 
 .buttonContainer {
     display: flex;
-    flex-direction: row;   /* ensures they stay side-by-side */
+    flex-direction: row;  
     justify-content: center;
     align-items: center;
-    gap: 15px;             /* spacing between buttons */
+    gap: 15px;             
     margin-top: 20px;
-    flex-wrap: wrap;       /* optional: keeps row on small screens */
+    flex-wrap: wrap;     
 }
 
 
@@ -52,7 +56,7 @@
 }
 
 .resizeInput {
-    width: 100%;
+    max-width: 100%;
     padding: 12px 20px;
     margin: 5px 0;
     /* box-sizing: border-box; */
