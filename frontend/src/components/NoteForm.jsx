@@ -31,7 +31,7 @@ const NoteForm = ({setNotes }) => {
   }
 
   return (
-    <div>
+    <div className={styles.inputContainer}>
       {user &&
         <form onSubmit={handleCreateNote}>
           <div>
@@ -43,8 +43,9 @@ const NoteForm = ({setNotes }) => {
               onChange={({ target }) => setTitle(target.value)}
             />
           </div>
+          Content
           <div>
-            Content
+            
             <textarea className={styles.resizeInput}
               data-testid='content'
               value={content}
