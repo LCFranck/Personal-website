@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 //import FlipPhoneImage from "../components/FlipPhoneImage.jsx";
 import MainBox from "../components/MainBox";
+import {Links} from "../components/Links";
+
 
 import styles from "../styles/MainBox.module.css";
 
@@ -14,6 +16,7 @@ export default function Home() {
         <br/>
         <p >This is my personal website made for fun and some useful small projects!</p>
         <p >If you want, you can register/log in to add a note to my note page!</p>
+        <p >Unfortunately, due to being deployed on Render, everything is very slow to load. It might take a while for images, notes, and user info to load</p>
 
         <div className={styles.buttonContainer}>
           <Link href="/gallery" className={styles.button}>
@@ -29,6 +32,7 @@ export default function Home() {
           </Link>
 
         </div>
+        <Links/>
       </MainBox>
     </div>
 

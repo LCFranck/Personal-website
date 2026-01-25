@@ -2,9 +2,9 @@ POST http://localhost:3001/api/notes
 Content-Type: application/json
 Authorization: Bearer 
 {
-  "title": "Crow facts",
-  "author": "Cassandra Franck",
-  "content": "A crow is a bird of the genus Corvus, or more broadly, a synonym for all of Corvus. The word \"crow\" is used as part of the common name of many species. The related term \"raven\" is not linked scientifically to any certain trait but is rather a general grouping for larger-sized species of Corvus. The collective name for a group of crows is a 'murder'.",
+  "title": "Hatsune Miku shares a crow fact!",
+  "author": "Hatsune Miku",
+  "content": "Hey guys its me Hatsune Miku! Did you know that crows can recognize human faces and remember them for years? They are also known to use tools and even hold grudges against specific individuals. Crows are incredibly intelligent birds with complex social structures. Fascinating, right?",
   "likes": 0  
 }
 

@@ -16,7 +16,7 @@ const NoteList = ({ notes }) => {
     return <span className={loader.loader}></span>;
   }
   return (
-    <div>
+    <div className={styles.notesList}>
       {notes.reverse().map(note => (
         <SingleNote key={note.id} note={note} />
       ))}
