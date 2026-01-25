@@ -1,23 +1,26 @@
 
-.notesContainer {
+.notesList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-  margin-top: 20px;
+  justify-items: center;
+/*   align-items: flex-start; */
+
+  /* margin: 10px; */
   
 }
 
 .noteCard{
-    margin-top: 10px;
-  /*   max-width: 30%;    */
-    height: auto;      
-    width: auto;       
+    margin: 10px;
+     height: auto; 
+     width: 100%;
+    /* max-width: 91.5%;   
+        
+    min-width: 45%;   */     
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+   /*  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); */
     color: #8b4a62;
     padding: 10;
   
@@ -25,6 +28,13 @@
     font-weight: bold;
 
 }
+/* 
+@media (width > 768px) {
+  .notesContainer {
+    flex-direction: row;
+  }
+}
+ */
 
 .contentBox{
     margin-top: 10px;
