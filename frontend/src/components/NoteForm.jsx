@@ -11,6 +11,7 @@ const NoteForm = ({setNotes }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
+
   const handleCreateNote = async (event) => {
     event.preventDefault()
     const author = user.username;
@@ -31,12 +32,13 @@ const NoteForm = ({setNotes }) => {
     }
   }
 
+
   return (
-    <div className={styles.inputContainer}>
+    <div >
       {user &&
-        <form onSubmit={handleCreateNote}>
+        <form onSubmit={handleCreateNote} className={styles.inputContainer}>
+          Title
           <div>
-            Title
             <input className={styles.input}
               type="text"
               value={title}

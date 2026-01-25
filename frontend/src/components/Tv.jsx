@@ -37,10 +37,12 @@ const Tv = () =>{
         <Image className={styles.screen} src={src} width={800} height={800} alt="text tv!" loading="eager" />
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.button} onClick={() => onChangePage(page + 1, 1)}>Next page</button>
+
         <button className={styles.button} onClick={() => onChangePage(page - 1, 1)}>Prev page</button>
-        <button className={styles.button} onClick={() => onChangePage(page, subpage + 1)}>Next subpage</button>
+        <button className={styles.button} onClick={() => onChangePage(page + 1, 1)}>Next page</button>
         <button className={styles.button} onClick={() => onChangePage(page, subpage - 1)}>Prev subpage</button>
+        <button className={styles.button} onClick={() => onChangePage(page, subpage + 1)}>Next subpage</button>
+
       </div>
 
       <div className={styles.inputContainer}>

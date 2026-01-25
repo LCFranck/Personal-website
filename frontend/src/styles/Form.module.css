@@ -1,7 +1,8 @@
 .input {
     width: 100%;
+    height: auto;
     padding: 12px 20px;
-    margin: 5px 0;
+    margin: 5px;
     /* box-sizing: border-box; */
     border: 2px solid #9a5e5e;
     border-radius: 4px;
@@ -18,10 +19,15 @@
     margin-bottom: 10px;
     padding: 20px;
     width: 100%; 
-
+     justify-content: center;
+    max-width: 100%;
     display: flex;
     flex-direction: Column;
-    align-items: top;
+    align-items: center;
+      font-weight: bold;
+    
+   
+ 
 }
 
 .buttonContainer {
@@ -56,13 +62,16 @@
 }
 
 .resizeInput {
-    max-width: 100%;
+    max-width: 50vw;
+    height: auto;
+   /*  width:100%; */
     padding: 12px 20px;
     margin: 5px 0;
-    /* box-sizing: border-box; */
+     box-sizing: border-box; 
     border: 2px solid #9a5e5e;
     border-radius: 4px;
     background-color: #f39898;
     font-size: 16px;
     resize: both;
+    overflow: auto;
 }
