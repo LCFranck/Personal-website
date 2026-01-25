@@ -55,12 +55,11 @@ Planned improvements:
 - [x] Finish login & registration functionality
 - [ ] make notifications
 - [ ] add functionality to delete notes
-- [ ] Finish notes page
+- [x] Finish notes page
 - [ ] Improve UX and UI details in login and profile
 - [x] Deploy the project
 - [ ] Make it mobile friendly
-- [ ] Move gallery to backend (to improve efficiency and)
-- [ ] make "About me" page actually say something about me
+- [x] make "About me" page actually say something about me
 
 
 
