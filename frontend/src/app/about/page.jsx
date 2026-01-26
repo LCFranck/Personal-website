@@ -11,11 +11,15 @@ const AboutPage = () => {
         <h1>About Me  </h1>
         <div className={styles.aboutContainer}>
           <div className={styles.leftBox}>
-            <p className={styles.textBox}>
+            <div className={styles.textBox}>
               <h3>Who am i?</h3>
+              <p>
+
                 I&apos;m a computer science master&apos;s student with a strong interest in software development, full-stack systems, and how different components work together to form reliable, useful solutions. I enjoy building things end-to-end, from designing interfaces to implementing backend logic and integrations and I&apos;m always curious about new tools and technologies.
                 Outside of coding, I stay active through kickboxing, running, and the gym, and I enjoy more creative outlets like ceramics and painting. I&apos;m motivated by continuous improvement, whether that means refining a piece of code, learning a new framework, or challenging myself in completely new ways.
-            </p>
+              </p>
+            </div>
+
 
             <ul className={styles.list}>
 
