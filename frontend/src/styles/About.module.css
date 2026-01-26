@@ -6,7 +6,8 @@
     align-items: center;
  /*    align-self: flex-start; */
     /*  flex-wrap: wrap; */
-    width:50vw;
+    max-width:40vw;
+    min-width: none;
       gap: 40px;
 
     height: auto;
@@ -14,6 +15,7 @@
 }
 
 .rightbox {
+  width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +31,11 @@
     align-items: flex-start;
     gap: 40px;
 }
+
+.aboutContainer h3 {
+    margin-bottom: 10px;
+}
+
 
 .list {
 
