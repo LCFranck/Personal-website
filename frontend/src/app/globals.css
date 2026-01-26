@@ -21,7 +21,7 @@ body {
   background-image: url('../../public/assets/7425076.jpg');  
   background-size: cover;       
   background-position: center; 
-     background-attachment: fixed;
+  background-attachment: fixed;
 
   color: var(--foreground);
   background-color: var(--background);
