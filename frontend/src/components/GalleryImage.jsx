@@ -1,25 +1,40 @@
 "use client";
 import React from "react";
+import {useState} from "react"
 import Image from "next/image";
 
 import styles from "../styles/Gallery.module.css";
 
 const GalleryItem = ({img}) => {
-
+/*   const [hide, setHide]= useState(true) */
 
   const showImage = () => {
     window.open(`/galleryImages/${img}`, '_blank');
+   /*  setHide(!hide) */
   }
 
+  
 
   return(
     <div>
+     {/*  {!hide &&
+       <div>
+        <Image 
+        id="myImg" 
+        src={`/galleryImages/${img}`} 
+        alt="gallery image" 
+        width={3000}
+        height={3000}>
+        </Image>
+      </div>
+      } */}
+     
       <button onClick ={showImage} className={styles.imageButton}>
 
         <Image className={styles.image}
           key={img}
           src={`/galleryImages/${img}`}
-          alt=""
+          alt="gallery image"
           width={300}
           height={300}
           loading="eager"
