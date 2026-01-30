@@ -47,9 +47,10 @@ const LogInForm = () => {
       {!user &&
         <form onSubmit={handleLogin}>
           <div>
-            Username
+            <label htmlFor="username">Username</label>
             <input className={styles.input}
               data-testid='username'
+              id = "username"
               type="text"
               value={username}
               name="Username"
@@ -57,9 +58,10 @@ const LogInForm = () => {
             />
           </div>
           <div>
-            Password
+            <label htmlFor="password">Password</label>
             <input className={styles.input}
               data-testid='password'
+              id="password"
               type="password"
               value={password}
               name="Password"

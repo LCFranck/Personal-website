@@ -75,3 +75,14 @@
     resize: both;
     overflow: auto;
 }
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* top-left */
+  width: 100%;
+}
+
+.field label {
+  margin-bottom: 4px;
+}

@@ -48,8 +48,9 @@ const RegisterForm = () => {
       {!user &&
         <form onSubmit={handleRegister}>
           <div>
-            Username
+            <label htmlFor="username">Username</label>
             <input className={styles.input}
+              id="username"
               type="text"
               value={username}
               name="Username"
@@ -57,8 +58,11 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            name
+            <label htmlFor="name">Name</label>
+
             <input className={styles.input}
+              id="name"
+
               type="text"
               value={name}
               name="name"
@@ -66,18 +70,21 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            Password
+            <label htmlFor="password">Password</label>
+
             <input className={styles.input}
               type="password"
+              id="password"
               value={password}
               name="Password"
               onChange={({ target }) => setPassword(target.value)}
             />
           </div>
           <div>
-            Password
+            <label htmlFor="repeatPassword">Repeat password</label>
             <input className={styles.input}
               type="password"
+              id="repeatPassword"
               value={passwordRepeat}
               name="Password Repeat"
               onChange={({ target }) => setPasswordRepeat(target.value)}
