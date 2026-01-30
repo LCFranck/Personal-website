@@ -10,25 +10,25 @@ const GalleryItem = ({img}) => {
 
   const showImage = () => {
     window.open(`/galleryImages/${img}`, '_blank');
-   /*  setHide(!hide) */
+    /*  setHide(!hide) */
   }
 
-  
+
 
   return(
     <div>
-     {/*  {!hide &&
+      {/*  {!hide &&
        <div>
-        <Image 
-        id="myImg" 
-        src={`/galleryImages/${img}`} 
-        alt="gallery image" 
+        <Image
+        id="myImg"
+        src={`/galleryImages/${img}`}
+        alt="gallery image"
         width={3000}
         height={3000}>
         </Image>
       </div>
       } */}
-     
+
       <button onClick ={showImage} className={styles.imageButton}>
 
         <Image className={styles.image}
