@@ -18,7 +18,7 @@ const AboutPage = () => {
                 <br /><br />
   I enjoy working close to both development and infrastructure, designing interfaces, implementing backend logic, integrating APIs, and thinking about how data, automation, and deployment fit together in real systems. I&apos;m naturally curious and enjoy learning new tools, technologies, and patterns as part of building practical solutions.
                 <br /><br />
-  Outside of coding, I stay active through kickboxing, running, and the gym, and I enjoy creative outlets like ceramics and painting. I&apos;m motivated by continuous improvement, whether that means refining a piece of code, learning a new framework, or challenging myself in completely new ways.
+  Outside of coding, I stay active through running and the gym, and I enjoy creative outlets like ceramics and painting. I&apos;m motivated by continuous improvement, whether that means refining a piece of code, learning a new framework, or challenging myself in completely new ways.
               </p>
             </div>
             <ul className={styles.list}>

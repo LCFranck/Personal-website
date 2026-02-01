@@ -6,9 +6,9 @@
     align-items: center;
  /*    align-self: flex-start; */
     /*  flex-wrap: wrap; */
-    max-width:40vw;
+    max-width:35vw;
     min-width: none;
-      gap: 40px;
+      gap: 35px;
 
     height: auto;
 
@@ -25,11 +25,12 @@
 }
 .aboutContainer {
    margin-top: 20px;
+   width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 34px;
 }
 
 .aboutContainer h3 {
