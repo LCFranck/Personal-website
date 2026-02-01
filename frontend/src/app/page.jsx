@@ -14,9 +14,9 @@ export default function Home() {
       <MainBox>
         <h1 >Welcome to my personal website!</h1>
         <br/>
-        <p >This is my personal website made for fun and some useful small projects!</p>
+        <p >Hello, my name is cassandra Franck and welcome to my website!</p>
         <p >If you want, you can register/log in to add a note to my note page!</p>
-        <p >Unfortunately, due to being deployed on Render, everything is very slow to load. It might take a while for images, notes, and user info to load</p>
+
 
         <div className={styles.buttonContainer}>
           <Link href="/gallery" className={styles.button}>
