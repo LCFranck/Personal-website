@@ -107,6 +107,9 @@
 
 .icon:hover {
   color: #8fb583; /* LinkedIn blue */
+    transform: scale(1.1);
+  rotate: 1440deg;
+  transition: transform 5.3s ease;
 }
 
 
