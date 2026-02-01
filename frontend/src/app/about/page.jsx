@@ -69,12 +69,12 @@ const AboutPage = () => {
             </ul>
             <ul className={styles.list}>
               <h3>Hobbies</h3>
-              <li>I love coding</li>
-              <li>I love fullstack development</li>
-              <li>I love going to the gym</li>
-              <li>I love ceramics</li>
-              <li>I love painting</li>
-              <li>I love gaming</li>
+              <li>coding</li>
+              <li>fullstack development</li>
+              <li>going to the gym</li>
+              <li>ceramics</li>
+              <li>painting</li>
+              <li>gaming</li>
             </ul>
           </div>
         </div>

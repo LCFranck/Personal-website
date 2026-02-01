@@ -9,7 +9,7 @@ export default function GalleryPage() {
     <div >
       <MainBox>
         <div style={{ textAlign: "center"}}>
-          <h1>Gallery!</h1>
+          <h1>Gallery</h1>
           <h2>Press image to open in new tab!</h2>
         </div>
         <Gallery/>

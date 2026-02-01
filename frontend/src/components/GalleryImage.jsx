@@ -31,13 +31,15 @@ const GalleryItem = ({img}) => {
 
       <button onClick ={showImage} className={styles.imageButton}>
 
-        <Image className={styles.image}
+        <Image 
           key={img}
           src={`/galleryImages/${img}`}
           alt="gallery image"
           width={300}
           height={300}
           loading="eager"
+          className={styles.image}
+          style={{ width: "auto", height: "100%" }}
         />
       </button>
     </div>
