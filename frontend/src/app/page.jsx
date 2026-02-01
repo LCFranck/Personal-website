@@ -12,12 +12,13 @@ export default function Home() {
   return (
     <div>
       <MainBox>
+        <div className={styles.home}>
         <h1 >Welcome to my personal website!</h1>
         <br/>
-        <p >Hello, my name is cassandra Franck and welcome to my website!</p>
-        <p >If you want, you can register/log in to add a note to my note page!</p>
-
-
+        <div className={styles.textBox}>
+          <p >Hello, my name is cassandra Franck and welcome to my website!</p>
+          <p >If you want, you can register/log in to add a note to my note page!</p>
+        </div>
         <div className={styles.buttonContainer}>
           <Link href="/gallery" className={styles.button}>
 
@@ -33,6 +34,7 @@ export default function Home() {
 
         </div>
         <Links/>
+        </div>
       </MainBox>
     </div>
 
