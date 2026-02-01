@@ -14,11 +14,11 @@ const AboutPage = () => {
             <div className={styles.textBox}>
               <h3>Who am i?</h3>
               <p>
-  I&apos;m a computer science master&apos;s student with a strong interest in building reliable software systems and understanding how different components work together end to end. My interests span full-stack development, backend systems, cloud-based solutions, data pipelines, and security-conscious design.
+                I&apos;m a computer science master&apos;s student with a strong interest in building reliable software systems and understanding how different components work together end to end. My interests span full-stack development, backend systems, cloud-based solutions, data pipelines, and security-conscious design.
                 <br /><br />
-  I enjoy working close to both development and infrastructure, designing interfaces, implementing backend logic, integrating APIs, and thinking about how data, automation, and deployment fit together in real systems. I&apos;m naturally curious and enjoy learning new tools, technologies, and patterns as part of building practical solutions.
+                 I enjoy working close to both development and infrastructure, designing interfaces, implementing backend logic, integrating APIs, and thinking about how data, automation, and deployment fit together in real systems. I&apos;m naturally curious and enjoy learning new tools, technologies, and patterns as part of building practical solutions.
                 <br /><br />
-  Outside of coding, I stay active through running and the gym, and I enjoy creative outlets like ceramics and painting. I&apos;m motivated by continuous improvement, whether that means refining a piece of code, learning a new framework, or challenging myself in completely new ways.
+                  Outside of coding, I stay active through running and the gym, and I enjoy creative outlets like ceramics and painting. I&apos;m motivated by continuous improvement, whether that means refining a piece of code, learning a new framework, or challenging myself in completely new ways.
               </p>
             </div>
             <ul className={styles.list}>
@@ -69,12 +69,12 @@ const AboutPage = () => {
             </ul>
             <ul className={styles.list}>
               <h3>Hobbies</h3>
-              <li>I love coding</li>
-              <li>I love fullstack development</li>
-              <li>I love going to the gym</li>
-              <li>I love ceramics</li>
-              <li>I love painting</li>
-              <li>I love gaming</li>
+              <li>coding</li>
+              <li>fullstack development</li>
+              <li>going to the gym</li>
+              <li>ceramics</li>
+              <li>painting</li>
+              <li>gaming</li>
             </ul>
           </div>
         </div>

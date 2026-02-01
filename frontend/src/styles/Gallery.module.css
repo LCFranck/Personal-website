@@ -7,11 +7,32 @@
     gap: 20px;
     
 } 
+/* 
+this doesnt work wiith nextjs images sicne they require fix size, will continue to solve this issue
+@media (max-width: 800px) {
+    .imageButton {
+    width: auto;
+    height: 1vw; 
+     background-color: #000000;
+    border: 5px solid #000000;
+}
+.image { 
+    cursor: pointer;
+    height: 1vw;       
+   background-color: #000000;
+    border: 5px solid #000000;
 
+    }
+}
+
+ */
 
 .imageButton {
-    width: auto;
-    height: 170px; 
+/*     position: "relative";
+
+ */   
+  width: auto;
+    height: 180px; 
     background-color: transparent;
     border: 3px solid transparent;
     border-radius: 8px;
@@ -21,14 +42,14 @@
     cursor: pointer;
     height: 180px;       
     width: auto;        
-    object-fit: cover; 
+   /*  object-fit: cover;  */
     background-color: #ffc3c3;
     border: 5px solid #d98687;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     color: #703333;
     display: flex;
-    font-size: 24px;
+  /*   font-size: 24px; */
 
     }
 
