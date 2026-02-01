@@ -31,7 +31,7 @@ const GalleryItem = ({img}) => {
 
       <button onClick ={showImage} className={styles.imageButton}>
 
-        <Image 
+        <Image
           key={img}
           src={`/galleryImages/${img}`}
           alt="gallery image"
