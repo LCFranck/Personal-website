@@ -16,7 +16,7 @@ export default function Home() {
         <br/>
         <p >Hello, my name is cassandra Franck and welcome to my website!</p>
         <p >If you want, you can register/log in to add a note to my note page!</p>
-    
+
 
         <div className={styles.buttonContainer}>
           <Link href="/gallery" className={styles.button}>

@@ -72,7 +72,6 @@ const AboutPage = () => {
               <li>I love coding</li>
               <li>I love fullstack development</li>
               <li>I love going to the gym</li>
-              <li>I love kickboxing</li>
               <li>I love ceramics</li>
               <li>I love painting</li>
               <li>I love gaming</li>
