@@ -1,5 +1,5 @@
 
-#  Personal Website🍓
+#  Personal Website
 
 URL: https://personal-website-frontend-n1lo.onrender.com 
 
