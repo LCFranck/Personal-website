@@ -56,9 +56,9 @@ Planned improvements:
 - [ ] make notifications
 - [ ] add functionality to delete notes
 - [x] Finish notes page
-- [ ] Improve UX and UI details in login and profile
+- [x] Improve UX and UI details in login and profile
 - [x] Deploy the project
-- [ ] Make it mobile friendly
+- [x] Make it mobile friendly
 - [x] make "About me" page actually say something about me
 
 
