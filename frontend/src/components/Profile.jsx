@@ -17,8 +17,6 @@ const Profile = () => {
     console.log('logged out')
   }
   return (
-
-
     <div>  {user && <div>
       <h1>{user.username} logged in  </h1>
       <button onClick={handleLogout} className={styles.button}>Logout </button>
