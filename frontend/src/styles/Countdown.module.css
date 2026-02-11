@@ -13,8 +13,8 @@
   align-items: center;
     justify-content: center;
   flex-direction: row;
-flex-wrap: wrap;
-  font-family: "Georgia", serif;
+  flex-wrap: wrap;
+ /*  font-family: "Georgia", serif; */
   color: #814a4a;
 
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
