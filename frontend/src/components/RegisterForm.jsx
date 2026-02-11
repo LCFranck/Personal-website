@@ -1,7 +1,7 @@
 "use client"
 //could probably be combined with LogInForm.jsx
 import { useState, useEffect } from 'react'
-import { loginService } from '../lib/loginService.jsx'
+import { loginService } from '../lib/loginService'
 //import noteService from '../services/notes.js'
 import { useAuth } from '../context/AuthContext.jsx'
 import styles from '../styles/Form.module.css'
@@ -28,7 +28,7 @@ const RegisterForm = () => {
         username, name, password
       });
 
-      const loginData = await loginService.login({username, password});
+      const loginData = await loginService({username, password});
       login(loginData)
       console.log('successful login')
 
