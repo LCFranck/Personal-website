@@ -9,6 +9,10 @@
     background-color: #f39898;
     font-size: 16px;
 }
+.tempWarning{
+    max-width: 30vw;
+    color: red !important; }
+
 
 .inputContainer {
     background-color: #ddeebf;

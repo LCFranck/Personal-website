@@ -10,6 +10,12 @@
   
 }
 
+.loading{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .noteCard{
     margin: 10px;
      height: auto; 
