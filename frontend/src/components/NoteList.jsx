@@ -9,15 +9,14 @@ import loader from "../styles/Loader.module.css"
 
 import { useAuth } from "../context/AuthContext";
 
-const NoteList = ({ notes1 }) => {
+const NoteList = ({ notes }) => {
 
-const notes = []
   if (!notes || notes.length === 0) {
     return <div className={styles.loading}>
       <span className={loader.loader}></span>
-      <p>  Starting render backend, might take a while...</p> 
-      </div>
-    
+      <p>  Starting render backend, might take a while...</p>
+    </div>
+
   }
   return (
     <div className={styles.notesList}>
