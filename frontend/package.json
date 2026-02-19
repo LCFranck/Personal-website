@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext js,jsx",
+    "lint": "eslint .",
     "lintfix": "eslint --fix --ext .js,.jsx ."
   },
   "dependencies": {
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.3"
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.6"
   }
 }

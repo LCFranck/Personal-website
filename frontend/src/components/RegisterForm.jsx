@@ -13,12 +13,14 @@ const RegisterForm = () => {
   const [password, setPassword] = useState('');
   const [passwordRepeat, setPasswordRepeat] = useState('');
   const [name, setName] = useState('');
+  const [visWarning, setVisWarning] = useState(false);
 
 
 
 
   const handleRegister = async (event) => {
     event.preventDefault();
+    setVisWarning(true)
     if (password !== passwordRepeat) {
       console.log('passwords do not match');
       return;
@@ -90,8 +92,9 @@ const RegisterForm = () => {
               onChange={({ target }) => setPasswordRepeat(target.value)}
             />
           </div>
-          <button type="submit" className={styles.button}>Register</button>
+          {visWarning && <p className={styles.tempWarning}> the backend might not be running yet, might take a while but you will be logged in if username and passwords are vaild.</p>}
 
+          <button type="submit" className={styles.button}>Register</button>
         </form>}
     </div>
   )

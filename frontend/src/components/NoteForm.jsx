@@ -6,7 +6,7 @@ import { create } from "@/lib/noteService";
 
 import { useState } from 'react';
 
-const NoteForm = ({setNotes }) => {
+const NoteForm = ({ setNotes }) => {
   const {user} = useAuth();
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -37,7 +37,6 @@ const NoteForm = ({setNotes }) => {
     <div >
       {user &&
         <form onSubmit={handleCreateNote} className={styles.inputContainer}>
-
           <div>
             <label htmlFor="title">Title</label>
 

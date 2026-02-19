@@ -11,9 +11,12 @@ import { useAuth } from "../context/AuthContext";
 
 const NoteList = ({ notes }) => {
 
-
   if (!notes || notes.length === 0) {
-    return <span className={loader.loader}></span>;
+    return <div className={styles.loading}>
+      <span className={loader.loader}></span>
+      <p>  Starting render backend, might take a while...</p>
+    </div>
+
   }
   return (
     <div className={styles.notesList}>
