@@ -1,12 +1,14 @@
 
 #  Personal Website
+## About
 
-URL: https://personal-website-frontend-n1lo.onrender.com 
 
 This is an personal website made for fun and learning.  
 The project focuses on custom UI design, fun UI interactions, and experimenting with both frontend and backend technologies.
 
-It is **not meant to be a polished or professional website**. It is my creative space to try ideas, learn, and build things that feel fun or useful.
+### IMPORTANT
+Right now the deployment is down, due to the free tier on Render being limited. Will be up again in march or sooner if I upgrade to a paid tier.
+URL: https://personal-website-frontend-n1lo.onrender.com 
 
 ---
 
