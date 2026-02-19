@@ -61,8 +61,8 @@
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;
-    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
-    width: stretch;
+/*     box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+ */    width: stretch;
     font-size: 130%;
     padding: 5%;
    /*  padding-left: 30px; */
@@ -80,8 +80,8 @@
     background-color: #ffc3c3;
     border: 3px solid #d98687;
     border-radius: 8px;
-    box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
-  
+/*     box-shadow: 34 10px 10px rgba(0, 0, 0, 0.1);
+ */  
  
     width: stretch;
     font-size: 130%;
