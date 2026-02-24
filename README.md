@@ -108,12 +108,14 @@ npm run dev
 now everything should be running
 
 ## Screenshots of current version
-<img width="2847" height="1507" alt="countdown page" src="https://github.com/user-attachments/assets/3af328fb-45c5-4b8f-8cad-427fc668b910" />
-<img width="2815" height="1520" alt="gallery page1" src="https://github.com/user-attachments/assets/5f813693-f4d1-4c31-ae6f-e73876fa141f" />
-<img width="2876" height="1043" alt="homepage" src="https://github.com/user-attachments/assets/d7193df5-fa0e-4a46-bf0b-f2b24c5d5b4b" />
-<img width="2827" height="1508" alt="teletext page" src="https://github.com/user-attachments/assets/946d3958-00ad-4007-a1a6-12b928f79f9a" />
-<img width="1903" height="937" alt="note page" src="https://github.com/user-attachments/assets/641ad4fe-b1e4-4323-813b-d96a2b7b4223" />
-
+<img width="2554" height="1226" alt="Home page" src="https://github.com/user-attachments/assets/677433a1-7a2f-4122-8f9e-9f55487de0c8" />
+<img width="2542" height="1242" alt="About me page" src="https://github.com/user-attachments/assets/95aee815-b791-490c-9695-74e0ed12a16f" />
+<img width="2537" height="1243" alt="Gallery page" src="https://github.com/user-attachments/assets/ed1e0a1d-49f0-4659-8486-e8dbbcb0ab6d" />
+<img width="2553" height="1233" alt="Txt TV page" src="https://github.com/user-attachments/assets/2bf72405-6154-4bbb-a744-96f03d5efb3e" />
+<img width="2547" height="1235" alt="Notes page" src="https://github.com/user-attachments/assets/2885f269-6087-4be7-a77f-dd851ec21680" />
+<img width="2551" height="1134" alt="Countdown page" src="https://github.com/user-attachments/assets/4176ce94-89d9-4c0c-b94e-faf357b8d8e0" />
+<img width="2540" height="965" alt="Login page" src="https://github.com/user-attachments/assets/450875c7-1b13-429e-b023-d0e088f96cf3" />
+<img width="2531" height="1160" alt="Register page" src="https://github.com/user-attachments/assets/d8a38818-a788-4e8a-8630-77cea4214118" />
 
 
 
